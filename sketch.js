@@ -5,6 +5,8 @@ var egg, eggimage,eggGroup,eggsound;
 
 var ground,score,life;
 
+var basket1;
+
 var gameState="start"; 
 function preload(){
   henimage= loadImage("hen.png")
@@ -25,6 +27,12 @@ function setup() {
  basket  = createSprite(200,390,10,10);
  basket.addImage(basketimage);
  basket.debug =true;
+
+ basket1  = createSprite(100,390,10,10);
+ basket1.addImage(basketimage);
+ basket1.debug =true;
+
+
   ground = createSprite(250,400,500,20)
   ground.shapeColor ="green";
 
